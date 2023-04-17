@@ -1,17 +1,21 @@
+import Box, { BoxPropsType } from "elements/box";
 import React from "react";
-import { TextProps, TextWrapper } from "./styles/text.styled";
+import { FontStyle } from "styles/variables";
 
-interface PropsType extends TextProps {
-    children: any
+interface PropsType {
+    children?: any
 }
 
-const Text: React.FC<PropsType> = ({ children, ...rest }) => {
+const Text: React.FC<PropsType & BoxPropsType> = ({ children, as, ...rest }) => {
     return (
-        <TextWrapper {...rest}>
-            {
-                children
-            }
-        </TextWrapper>
+        <Box
+            as={as ? as : 'span'}
+            fWeight={rest.fWeight ? rest.fWeight : FontStyle.bold}
+            m={rest.m ? rest.m : '0'}
+            {...rest}
+        >
+            {children}
+        </Box>
     )
 }
 

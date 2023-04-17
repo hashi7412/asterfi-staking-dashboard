@@ -36,6 +36,7 @@ declare type ColorType						= CSSOriginType | 'currentcolor' | string
 
 declare type TextAlignType                  = CSSOriginType | 'center' | 'right' | 'left'
 declare type TextTransformType              = CSSOriginType | 'uppercase' | 'lowercase' | 'capitalize'
+declare type LetterSpacingType              = CSSOriginType | 'normal' | UnitValType
 
 declare type PaddingType					= CSSOriginType | string
 
@@ -60,6 +61,8 @@ declare type BgSizeType						= CSSOriginType | 'contain' | 'cover' | 'auto'
 declare type BackdropFilterType             = CSSOriginType | 'none' | string
 
 declare type BorderType						= CSSOriginType | string
+
+declare type BorderRadiusType               = CSSOriginType | string
 
 declare type OverflowType					= CSSOriginType | 'auto' | 'hidden' | 'overflow-y' | 'overflow-x'
 

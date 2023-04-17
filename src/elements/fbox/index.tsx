@@ -3,7 +3,7 @@ import Box, { BoxPropsType } from "elements/box";
 
 const FBox: React.FC<BoxPropsType> = ({ children, ...rest }) => {
     return (
-        <Box display={'flex'} {...rest}>
+        <Box dplay={'flex'} {...rest}>
             {
                 children
             }

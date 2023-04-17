@@ -13,5 +13,4 @@ export const IconWrapper = styled(Box)<IconProps>`
     justify-content: center;
     width: ${props => props.width ? props.width : "1rem"};
     height: ${props => props.height ? props.height : "1rem"};
-    color: ${props => props.fill ? props.fill : `var(--${props.fill})`};
 `
