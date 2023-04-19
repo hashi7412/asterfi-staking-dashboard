@@ -4,7 +4,7 @@ import { BoxWrapper } from './styles/box.styled';
 
 export interface BoxPropsType extends ElementDefaultProps {
     as?: any
-    children: any
+    children?: any
 }
 
 const Box: React.FC<BoxPropsType> = ({ children, ...rest }) => {

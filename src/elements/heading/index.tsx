@@ -1,16 +1,24 @@
+import Box, { BoxPropsType } from "elements/box";
 import React from "react";
-import { HeadingWrapper, TextProps } from "./styles/heading.styled";
+import { FontSize, FontStyle } from "styles/variables";
 
-interface PropsType extends TextProps {
-    children: any
+interface PropsType {
+    children?: any
     level: 1 | 2 | 3 | 4 | 5 | 6
 }
 
-const Heading: React.FC<PropsType> = ({ children, level, ...rest }) => {
+const Heading: React.FC<PropsType & BoxPropsType> = ({ children, level, ...rest }) => {
     return (
-        <HeadingWrapper as={`h${level}`} level={level} {...rest}>
+        <Box
+            as={`h${level}`}
+            fWeight={rest.fWeight ? rest.fWeight : FontStyle.bold}
+            m={rest.m ? rest.m : '0'}
+            mb={rest.mb ? rest.mb : '0.45em'}
+            fSize={rest.fSize ? rest.fSize : FontSize[`fSize${level}`].label}
+            {...rest}
+        >
             {children}
-        </HeadingWrapper>
+        </Box>
     )
 }
 

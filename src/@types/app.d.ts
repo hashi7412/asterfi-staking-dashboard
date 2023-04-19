@@ -12,6 +12,7 @@ interface CarInfo {
 
 interface CategoryItemType {
     label: string
+    icon?: any
     link?: string
     key?: string
     badge?: string | number

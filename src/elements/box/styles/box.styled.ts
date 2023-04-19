@@ -11,11 +11,11 @@ export const setStyle = (styles: ElementDefaultProps) => {
 		${styles.bottom			? `bottom: ${styles.bottom};`					: ``}
 		${styles.right			? `right: ${styles.right};`						: ``}
 		${styles.flex			? `flex: ${styles.flex};`						: ``}
-		${styles.display		? `display: ${styles.display};`					: ``}
+		${styles.dplay			? `display: ${styles.dplay};`					: ``}
 		${styles.fDir			? `flex-direction: ${styles.fDir};`				: ``}
 		${styles.fWrap			? `flex-wrap: ${styles.fWrap};`					: ``}
 		${styles.alignItems		? `align-items: ${styles.alignItems};`			: ``}
-		${styles.vAlign			? `align-items: ${styles.vAlign};`				: ``}
+		${styles.valign			? `align-items: ${styles.valign};`				: ``}
 		${styles.justifyContent	? `justify-content: ${styles.justifyContent};`	: ``}
 		${styles.hAlign			? `justify-content: ${styles.hAlign};`			: ``}
 		${styles.g				? `gap: ${styles.g};`							: ``}
@@ -24,6 +24,9 @@ export const setStyle = (styles: ElementDefaultProps) => {
 		${styles.h				? `height: ${styles.h};`						: ``}
 		${styles.w				? `width: ${styles.w};`							: ``}
 		${styles.minW			? `min-width: ${styles.minW};`					: ``}
+		${styles.maxW			? `max-width: ${styles.maxW};`					: ``}
+		${styles.minH			? `min-height: ${styles.minH};`					: ``}
+		${styles.maxH			? `max-height: ${styles.maxH};`					: ``}
 		${styles.p				? `padding: ${styles.p};`						: ``}
 		${styles.pl				? `padding-left: ${styles.pl};`					: ``}
 		${styles.pr				? `padding-right: ${styles.pr};`				: ``}
@@ -34,10 +37,13 @@ export const setStyle = (styles: ElementDefaultProps) => {
 		${styles.mr				? `margin-right: ${styles.mr};`					: ``}
 		${styles.mt				? `margin-top: ${styles.mt};`					: ``}
 		${styles.mb				? `margin-bottom: ${styles.mb};`				: ``}
+		${styles.tAlign			? `text-align: ${styles.tAlign};`				: ``}
 		${styles.fFamily		? `font-family: ${styles.fFamily};`				: ``}
 		${styles.fSize			? `font-size: ${styles.fSize};`					: ``}
 		${styles.fWeight		? `font-weight: ${styles.fWeight};`				: ``}
-		${styles.tAlign			? `text-align: ${styles.tAlign};`				: ``}
+		${styles.txtTrans		? `text-transform: ${styles.txtTrans};`			: ``}
+		${styles.lSpace			? `letter-spacing: ${styles.lSpace};`			: ``}
+		${styles.color			? `color: ${styles.color};`						: ``}
 		${styles.bg				? `background: ${styles.bg};`					: ``}
 		${styles.overflow		? `overflow: ${styles.overflow};`				: ``}
 		${styles.overflowX		? `overflow-x: ${styles.overflowX};`			: ``}
@@ -47,6 +53,7 @@ export const setStyle = (styles: ElementDefaultProps) => {
 		${styles.bdb			? `border-bottom: ${styles.bdb};`				: ``}
 		${styles.bdl			? `border-left: ${styles.bdl};`					: ``}
 		${styles.bdr			? `border-right: ${styles.bdr};`				: ``}
+		${styles.bdradius		? `border-radius: ${styles.bdradius};`			: ``}
 		${styles.clipPath		? `clip-path: ${styles.clipPath};`				: ``}
 		${styles.cursor			? `cursor: ${styles.cursor};`					: ``}
 		${styles.content		? `content: ${styles.content};`					: ``}

@@ -9,7 +9,12 @@ export interface BoxPropsType extends ElementDefaultProps {
 
 const Link: React.FC<BoxPropsType> = ({ children, ...rest }) => {
     return (
-        <StyledLink {...rest}>
+        <StyledLink
+            dplay={rest.dplay ? rest.dplay : 'flex'}
+            valign={rest.valign ? rest.valign : 'center'}
+            g={rest.g ? rest.g : '0.5rem'}
+            {...rest}
+        >
             {children}
         </StyledLink>
     )

@@ -1,4 +1,5 @@
 declare module "*.ttf";
+declare module "*.otf";
 declare module "*.png";
 declare module "*.jpg";
 declare module "*.svg";
@@ -16,7 +17,7 @@ declare interface CSSInlineStyleType {
 	right?:				PosType
 	bottom?:			PosType
 	left?:				PosType
-	display?:			DisplayType
+	dplay?:				DisplayType
 	flex?:				FlexType
 	fBasis?:			FlexBasisType
 	fDir?:				FlexDirectionType
@@ -26,7 +27,7 @@ declare interface CSSInlineStyleType {
 	fWrap?:				FlexWrapType
 	alignContent?:		AlignContentType
 	alignItems?:		AlignItemsType
-	vAlign?:			AlignItemsType
+	valign?:			AlignItemsType
 	alignSelf?:			AlignSelfType
 	alignTracks?:		AlignTracksType
 	justifyContent?:	JustifyContentType
@@ -37,10 +38,12 @@ declare interface CSSInlineStyleType {
 	g?:					GapType
 	gx?:				GapType
 	gy?:				GapType
-	h?:					HeightType
 	w?:					WidthType
 	minW?:				WidthType
 	maxW?:				WidthType
+	h?:					HeightType
+	minH?:				HeightType
+	maxH?:				HeightType
 	p?:					PaddingType
 	px?:				PaddingType
 	py?:				PaddingType
@@ -61,6 +64,7 @@ declare interface CSSInlineStyleType {
 	fWeight?:			FontWeightType
 	tAlign?:			TextAlignType
 	txtTrans?:			TextTransformType
+	lSpace?:			LetterSpacingType
 	color?:				ColorType
 	bgAttachment?:		BgAttachmentType
 	bgBlendMode?:		BgBlendModeType
@@ -79,6 +83,7 @@ declare interface CSSInlineStyleType {
 	bdr?:				BorderType
 	bdb?:				BorderType
 	bdl?:				BorderType
+	bdradius?:			BorderRadiusType
 	overflow?:			OverflowType
 	overflowX?:			OverflowType
 	overflowY?:			OverflowType
