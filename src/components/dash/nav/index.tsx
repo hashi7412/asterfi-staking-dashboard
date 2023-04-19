@@ -22,6 +22,7 @@ const NavItem: React.FC<NavItemProps> = ({ children, to, active, badge }) => (
 			color={active ? BasicVar.color.label : BasicVar.color2.label}
 			bg={active ? BasicVar.bg2.label : 'transparent'}
 			w={'100%'}
+			transition={'all ease-in-out .2s'}
 		>
 			{children}
 		</Link>

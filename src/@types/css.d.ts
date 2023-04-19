@@ -66,6 +66,8 @@ declare type BorderRadiusType               = CSSOriginType | string
 
 declare type OverflowType					= CSSOriginType | 'auto' | 'hidden' | 'overflow-y' | 'overflow-x'
 
+declare type TransitionType    				= CSSOriginType | string
+
 declare type CursorType	    				= CSSOriginType | 'default' | 'pointer' | 'text' | 'alias' | 'all-scroll' | 'auto' | 'cell' | 'col-resize' | 'context-menu' | 'copy' | 'crosshair' | 'e-resize' | 'default' | 'ew-resize' | 'grab' | 'grabbing' | 'help' | 'move' | 'n-resize' | 'ne-resize' | 'nesw-resize' | 'ns-resize' | 'nw-resize' | 'nwse-resize' | 'no-drop' | 'none' | 'not-allowed' | 'progress' | 'row-resize' | 's-resize' | 'se-resize' | 'sw-resize' | 'w-resize' | 'wait' | 'zoom-in' | 'zoom-out' | string
 declare type ClipPathType    				= CSSOriginType | 'circle' | 'ellipse' | 'polygon' | 'url' | 'inset' | string
 

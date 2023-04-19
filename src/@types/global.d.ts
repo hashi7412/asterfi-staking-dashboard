@@ -87,6 +87,7 @@ declare interface CSSInlineStyleType {
 	overflow?:			OverflowType
 	overflowX?:			OverflowType
 	overflowY?:			OverflowType
+	transition?:		TransitionType
 	cursor?:			CursorType
 	content?:			ContentType
 	clipPath?:			ClipPathType
@@ -116,4 +117,4 @@ declare interface ElementEventType {
 	onChange?:			() => void
 }
 
-declare interface ElementDefaultProps extends CSSResponsiveStyleType, HTMLAttributes, ElementEventType {}
+declare interface ElementDefaultProps extends CSSResponsiveStyleType, HTMLAttributes, ElementEventType, any {}

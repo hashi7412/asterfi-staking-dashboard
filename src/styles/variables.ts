@@ -16,6 +16,7 @@ const DeviceWidth = {
 	mobileL:		{ value: '425px',			key: '--mxs',			label: 'var(--mxs)' },
 	tablet:			{ value: '768px',			key: '--mxs',			label: 'var(--mxs)' },
 	laptop:			{ value: '1024px',			key: '--mxs',			label: 'var(--mxs)' },
+	laptopM:		{ value: '1200px',			key: '--mxs',			label: 'var(--mxs)' },
 	laptopL:		{ value: '1440px',			key: '--mxs',			label: 'var(--mxs)' },
 	desktop:		{ value: '2560px',			key: '--mxs',			label: 'var(--mxs)' },
 }
@@ -47,10 +48,13 @@ const BasicVar = {
 	color2:			{ value: '#9E9E9E', 			key: '--color2', 				label: 'var(--color2)' },
 	color3:			{ value: '#ffffff88', 			key: '--color3', 				label: 'var(--color3)' },
 	border:			{ value: '#ffffff40', 			key: '--border', 				label: 'var(--border)' },
+	border2:		{ value: '#54597C', 			key: '--border2', 				label: 'var(--border2)' },
 
 	bRadius1:		{ value: '1rem',				key: '--bradius1',				label: 'var(--bradius1)' },
 	bRadius2:		{ value: '2rem',				key: '--bradius2',				label: 'var(--bradius2)' },
 	bRadius3:		{ value: '1.5rem',				key: '--bradius3',				label: 'var(--bradius3)' },
+	bRound:			{ value: '100rem',				key: '--bRound',				label: 'var(--bRound)' },
+	bRadius:		{ value: '100%',				key: '--bRadius',				label: 'var(--bRadius)' },
 
 	containerXPadding:{ value: '3rem',				key: '--container-xpadding',	label: 'var(--container-xpadding)' }
 }
@@ -62,7 +66,7 @@ const FontSize = {
 	fSize3:			{ value: '1.5rem',				key: '--fsize3',				label: 'var(--fsize3)' },
 	fSize4:			{ value: '1.3rem',				key: '--fsize4',				label: 'var(--fsize4)' },
 	fSize5:			{ value: '1rem',				key: '--fsize5',				label: 'var(--fsize5)' },
-	fSize6:			{ value: '0.85rem',				key: '--fsize6',				label: 'var(--fsize6)' },
+	fSize6:			{ value: '0.8rem',				key: '--fsize6',				label: 'var(--fsize6)' },
 }
 
 const FontSize_Sm = {
@@ -85,7 +89,8 @@ const FontStyle = {
 // custom variables
 // dashboard custom variables
 export const AsideVar = {
-	w:				{ value: '350px',					key: '--aside-width',			label: 'var(--aside-width)' }
+	w:				{ value: '350px',					key: '--aside-width',			label: 'var(--aside-width)' },
+	tabletW:		{ value: '80px',					key: '--aside-tabletW',			label: 'var(--aside-tabletW)' }
 }
 
 export {

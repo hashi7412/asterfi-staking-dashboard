@@ -4,7 +4,7 @@ import { setVariable } from "utils/style.utils";
 import TacticRound from "assets/font/tactic-round/TacticRound-Bld.ttf";
 import Gilroy from "assets/font/gilroy/Gilroy-Regular.ttf";
 import GilroyMedium from "assets/font/gilroy/Gilroy-Medium.ttf";
-import Stigo from "assets/font/stigo/Stigo_Regular.ttf";
+import Stigo from "assets/font/stigo/StigoThin.ttf";
 
 const GlobalStyle = createGlobalStyle`
 	@font-face {
@@ -99,6 +99,11 @@ const GlobalStyle = createGlobalStyle`
 
 	a, button, input[type=button], input[type=submit] {
 		cursor: pointer;
+	}
+
+	button {
+		border: none;
+		outline: none;
 	}
 
 	input {
