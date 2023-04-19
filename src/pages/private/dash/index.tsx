@@ -12,6 +12,7 @@ const DashLayout = () => {
                 flex={1}
                 minH={'100%'}
                 p={'2rem 1rem 0'}
+                overflow={'auto'}
             >
                 <Outlet />
             </Box>
