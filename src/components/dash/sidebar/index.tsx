@@ -12,6 +12,9 @@ const Sidebar = () => {
             fDir={'column'}
             bdr={`2px solid ${BasicVar.border.label}`}
             minW={AsideVar.w.label}
+            tablet={{
+                minW: AsideVar.tabletW.label
+            }}
         >
             <Header />
             <Box flex={1} p={'1.5rem 3rem 1.5rem 1.5rem'}>

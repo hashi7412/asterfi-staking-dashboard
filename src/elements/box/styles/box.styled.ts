@@ -11,12 +11,19 @@ export const setStyle = (styles: ElementDefaultProps) => {
 		${styles.bottom			? `bottom: ${styles.bottom};`					: ``}
 		${styles.right			? `right: ${styles.right};`						: ``}
 		${styles.flex			? `flex: ${styles.flex};`						: ``}
+		${styles.justifySelf	? `justify-self: ${styles.justifySelf};`		: ``}
+		${styles.justifyItems	? `justify-items: ${styles.justifyItems};`		: ``}
+		${styles.justifyContent	? `justify-content: ${styles.justifyContent};`	: ``}
+		${styles.justifyTracks	? `justify-tracks: ${styles.justifyTracks};`	: ``}
+		${styles.alignSelf		? `align-self: ${styles.alignSelf};`			: ``}
+		${styles.alignItems		? `align-items: ${styles.alignItems};`			: ``}
+		${styles.alignContent	? `align-content: ${styles.alignContent};`		: ``}
+		${styles.alignTracks	? `align-tracks: ${styles.alignTracks};`		: ``}
 		${styles.dplay			? `display: ${styles.dplay};`					: ``}
 		${styles.fDir			? `flex-direction: ${styles.fDir};`				: ``}
 		${styles.fWrap			? `flex-wrap: ${styles.fWrap};`					: ``}
 		${styles.alignItems		? `align-items: ${styles.alignItems};`			: ``}
 		${styles.valign			? `align-items: ${styles.valign};`				: ``}
-		${styles.justifyContent	? `justify-content: ${styles.justifyContent};`	: ``}
 		${styles.hAlign			? `justify-content: ${styles.hAlign};`			: ``}
 		${styles.g				? `gap: ${styles.g};`							: ``}
 		${styles.gx				? `column-gap: ${styles.gx};`					: ``}
@@ -55,6 +62,7 @@ export const setStyle = (styles: ElementDefaultProps) => {
 		${styles.bdr			? `border-right: ${styles.bdr};`				: ``}
 		${styles.bdradius		? `border-radius: ${styles.bdradius};`			: ``}
 		${styles.clipPath		? `clip-path: ${styles.clipPath};`				: ``}
+		${styles.transition		? `transition: ${styles.transition};`			: ``}
 		${styles.cursor			? `cursor: ${styles.cursor};`					: ``}
 		${styles.content		? `content: ${styles.content};`					: ``}
 	`
