@@ -44,13 +44,6 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	html {
-		box-sizing: border-box;
-		font-family: ${BasicVar.font1.label};
-		line-height: ${BasicVar.lineH.label};
-		font-size: ${FontSize.fSize.label};
-		color: ${BasicVar.color.label};
-		-ms-text-size-adjust: 100%;
-		-webkit-text-size-adjust: 100%;
 	}
 
 
@@ -61,6 +54,18 @@ const GlobalStyle = createGlobalStyle`
 		background-position: 25% 100%;
 		overflow: hidden;
     	user-select: none;
+
+		@media ${device.laptop} {
+			${setVariable(FontSize_Sm)}
+		}
+
+		box-sizing: border-box;
+		font-family: ${BasicVar.font1.label};
+		line-height: ${BasicVar.lineH.label};
+		font-size: ${FontSize.fSize.label};
+		color: ${BasicVar.color.label};
+		-ms-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
 	}
 
 	*, *:before, *:after {
@@ -77,10 +82,6 @@ const GlobalStyle = createGlobalStyle`
 		z-index: 1;
 		overflow: hidden;
 		min-height: 100vh;
-
-		@media ${device.mobileL} {
-			${setVariable(FontSize_Sm)}
-		}
 	}
 	
 	ul {
