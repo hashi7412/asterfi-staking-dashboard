@@ -76,7 +76,7 @@ const FontSize_Sm = {
 	fSize3:			{ value: '1.3rem',				key: '--fsize3',				label: 'var(--fsize3)' },
 	fSize4:			{ value: '1.1rem',				key: '--fsize4',				label: 'var(--fsize4)' },
 	fSize5:			{ value: '1rem',				key: '--fsize5',				label: 'var(--fsize5)' },
-	fSize6:			{ value: '0.7rem',				key: '--fsize6',				label: 'var(--fsize6)' },
+	fSize6:			{ value: '0.65rem',				key: '--fsize6',				label: 'var(--fsize6)' },
 }
 
 const FontStyle = {

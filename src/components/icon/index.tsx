@@ -82,7 +82,7 @@ const icons: any = {
 
 const Icon = ({ icon, width, height, fill }: PropsType) => {
 	return (
-		<IconWrapper width={width || '24px'} height={height || '24px'} fill={fill || BasicVar.color.label} >
+		<IconWrapper width={width || '1.25em'} height={height || '1.25em'} fill={fill || BasicVar.color.label} >
 			{icons[icon]}
 		</IconWrapper>
 	)
